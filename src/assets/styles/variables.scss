@@ -1,0 +1,18 @@
+// color
+$primaryColor: #409EFF;
+$greenColor: #67C23A;
+$orangeColor: #E6A23C;
+$redColor: #F56C6C;
+$lightGrayColor: #F5F7FA;
+$grayColor: #909399;
+$darkblueColor: #304156;
+
+:export {
+  primaryColor: $primaryColor;
+  greenColor: $greenColor;
+  orangeColor: $orangeColor;
+  redColor: $redColor;
+  lightGrayColor: $lightGrayColor;
+  grayColor: $grayColor;
+  darkblueColor: $darkblueColor;
+}
