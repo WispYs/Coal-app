@@ -37,7 +37,7 @@ const routes = [
     ]
   },
   {
-    path: '/detail',
+    path: '/detail/:id(\\w+)',
     name: 'Detail',
     component: Layout,
     redirect: '/detail/index',

@@ -13,8 +13,8 @@
               <p>录入时间： {{ item.createTime }}</p>
             </div>
             <template #right>
-              <van-button square :color="variables.primaryColor" class="swipe-button" text="编辑" />
-              <van-button square type="danger" class="swipe-button" text="删除" />
+              <van-button square :color="variables.primaryColor" class="swipe-button" text="编辑" @click="edit(i)" />
+              <van-button square type="danger" class="swipe-button" text="删除" @click="del(i)" />
             </template>
           </van-swipe-cell>
         </van-pull-refresh>
@@ -49,6 +49,12 @@ export default {
         this.isLoading = false
         this.count++
       }, 1000)
+    },
+    edit(i) {
+      console.log(i)
+    },
+    del(i) {
+      console.log(i)
     }
   }
 
