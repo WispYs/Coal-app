@@ -28,7 +28,7 @@
             :border="false"
             class="menu-second"
           >
-            <div v-for="secondMenu in sidebar.children" :key="secondMenu.title" class="menu-third">{{ secondMenu.title }}</div>
+            <div v-for="secondMenu in sidebar.children" :key="secondMenu.title" class="menu-third" @click="showMenu = false">{{ secondMenu.title }}</div>
           </van-collapse-item>
         </van-collapse>
 
